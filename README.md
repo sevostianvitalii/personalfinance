@@ -25,7 +25,20 @@ Analyze your bank statements (PDF), categorize transactions, and visualize your 
 
 ## How to Run
 
-### Backend
+### Using Docker (Recommended)
+You can run the entire application (Backend + Frontend) with a single command:
+
+```bash
+docker-compose up --build
+```
+
+- **Frontend**: http://localhost:5173
+- **Backend**: http://localhost:8000
+
+Data (`finance.db` and `uploads/`) will be persisted in the `backend/` directory.
+
+### Manual Setup
+#### Backend
 ```bash
 cd backend
 python -m venv .venv
